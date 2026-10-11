@@ -1,0 +1,8 @@
+# Tested with Python 3.12 on Windows, CPU only. These are NEW reference-code versions.
+# Install torch using the CPU wheel index; no private paths or editable installs here.
+--extra-index-url https://download.pytorch.org/whl/cpu
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+torch==2.14.1+cpu
+pytest==9.1.1
