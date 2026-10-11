@@ -111,6 +111,10 @@ Invoke comparisons separately for prespecified families. Clinical threshold comp
 require paired models trained with the **same threshold-specific labels**. Aligning
 patient order alone is insufficient. Statistical inference is conditional on saved
 OOF predictions and does not include variability from retraining bootstrap cohorts.
+For the three-threshold comparison family, obtain the unadjusted paired p-value
+within each threshold separately, then pass all three unadjusted values together
+to `step_af.statistics.holm_adjust`. Do not treat three separate one-comparison
+adjustments as a correction across the three thresholds.
 
 ## Provenance and boundaries
 
